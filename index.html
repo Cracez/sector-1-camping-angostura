@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sector 1 de Camping Angostura — Lago Rapel, El Manzano</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/icons/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body id="top">
+    <!-- Cabecera y menú principal -->
+    <header class="site-header" id="inicio">
+        <div class="container header-inner">
+            <a href="#top" class="brand-logo scroll-top-trigger" aria-label="Sector 1 de Camping Angostura">
+                <img src="assets/logo-angostura.svg" alt="Sector 1 de Camping Angostura" />
+            </a>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#el-lugar">El lugar</a></li>
+                    <li><a href="#modalidades">Camping y Cabañas</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#como-llegar">Cómo llegar</a></li>
+                    <li><a href="#reglamento">Reglamento</a></li>
+                </ul>
+            </nav>
+
+            <a href="tel:+56985823822" class="btn btn-primary header-cta">
+                <img src="assets/icons/phone-icon.svg" alt="" class="btn-icon" aria-hidden="true" />
+                <span>Llama ya</span>
+            </a>
+
+            <button type="button" class="menu-toggle" aria-label="Abrir menú de secciones" aria-expanded="false"
+                aria-controls="mobile-nav-drawer">
+                <span class="menu-toggle-lines" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Menú desplegable móvil (sin botón de llamada duplicado) -->
+        <nav id="mobile-nav-drawer" class="mobile-nav" aria-label="Secciones de la página" hidden>
+            <a href="#el-lugar">El lugar</a>
+            <a href="#modalidades">Camping y Cabañas</a>
+            <a href="#galeria">Galería</a>
+            <a href="#como-llegar">Cómo llegar</a>
+            <a href="#reglamento">Reglamento</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero principal -->
+        <section class="hero-section" id="el-lugar" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">SECTOR 1 · EL MANZANO · LAGO RAPEL</p>
+                    <h1 id="hero-title">Acampa frente al Lago Rapel y desconéctate de verdad.</h1>
+                    <p class="hero-lead">
+                        Sitios con sombra natural, cabañas equipadas y acceso directo al lago en El Manzano, Las Cabras.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="tel:+56985823822" class="btn btn-primary">
+                            <img src="assets/icons/phone-icon.svg" alt="" class="btn-icon" aria-hidden="true" />
+                            <span>Llama ya</span>
+                        </a>
+                        <a href="#como-llegar" class="btn btn-secondary">
+                            <img src="assets/icons/map-pin-icon.svg" alt="" class="btn-icon" aria-hidden="true" />
+                            <span>Cómo llegar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="hero-media media-frame">
+                    <img src="assets/img/hero-lago-rapel.jpg" alt="Muelle y vista del Lago Rapel en Sector 1" />
+                </figure>
+            </div>
+
+            <!-- Barra de atributos clave -->
+            <aside class="highlights-bar" aria-label="Atributos destacados">
+                <div class="container">
+                    <ul class="highlights-list">
+                        <li>
+                            <img src="assets/icons/waves-icon.svg" alt="" aria-hidden="true" />
+                            <span>Acceso directo al Lago Rapel</span>
+                        </li>
+                        <li>
+                            <img src="assets/icons/tent-icon.svg" alt="" aria-hidden="true" />
+                            <span>Camping y Cabañas equipadas</span>
+                        </li>
+                        <li>
+                            <img src="assets/icons/family-icon.svg" alt="" aria-hidden="true" />
+                            <span>Ambiente familiar</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Modalidades de estadía -->
+        <section class="section-md modalities-section" id="modalidades" aria-labelledby="modalidades-title">
+            <div class="container">
+                <header class="section-header">
+                    <p class="eyebrow">MODALIDADES DE ESTADÍA</p>
+                    <h2 id="modalidades-title">Elige cómo quieres vivir el Lago Rapel</h2>
+                    <p class="section-subtitle">
+                        Opciones pensadas tanto para quienes buscan acampar bajo la sombra como para quienes prefieren
+                        la comodidad de una cabaña equipada.
+                    </p>
+                </header>
+
+                <div class="modalities-grid">
+                    <article class="card modality-card">
+                        <figure class="card-media media-frame">
+                            <img src="assets/img/sitios-camping.jpg"
+                                alt="Sitios de camping con sombra y árboles junto al agua" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="badge-group">
+                                <span class="badge badge-nature">Aire libre</span>
+                                <span class="badge badge-nature">Sombra natural</span>
+                            </div>
+                            <h3>Sitios de Camping</h3>
+                            <ul class="feature-list">
+                                <li>
+                                    <img src="assets/icons/circle-check-icon.svg" alt="" aria-hidden="true" />
+                                    <span>Quincho propio, toldo y mesa en cada sitio</span>
+                                </li>
+                                <li>
+                                    <img src="assets/icons/circle-check-icon.svg" alt="" aria-hidden="true" />
+                                    <span>Estacionamiento junto a tu sitio y sombra natural</span>
+                                </li>
+                                <li>
+                                    <img src="assets/icons/circle-check-icon.svg" alt="" aria-hidden="true" />
+                                    <span>Punto de conexión eléctrica</span>
+                                </li>
+                                <li>
+                                    <img src="assets/icons/circle-check-icon.svg" alt="" aria-hidden="true" />
+                                    <span>Baños, duchas con agua caliente y acceso al lago</span>
+                                </li>
+                            </ul>
+                            <p class="card-note">Consulta tarifas por persona/día</p>
+                            <a href="tel:+56985823822" class="btn btn-primary btn-block">
+                                <img src="assets/icons/phone-icon.svg" alt="" class="btn-icon" aria-hidden="true" />
+                                <span>Llama ya</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card modality-card">
+                        <figure class="card-media media-frame">
+                            <img src="assets/img/cabanas-equipadas.jpg"
+                                alt="Cabañas equipadas en Sector 1 Camping Angostura" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="badge-group">
+                                <span class="badge badge-lake">Comodidad</span>
+                                <span class="badge badge-lake">Descanso</span>
+                            </div>
+                            <h3>Cabañas Equipadas</h3>
+                            <ul class="feature-list">
+                                <li>
+                                    <img src="assets/icons/circle-check-icon.svg" alt="" aria-hidden="true" />
+                                    <span>Cabañas cómodas para estadía familiar</span>
+                                </li>
+                                <li>
+                                    <img src="assets/icons/circle-check-icon.svg" alt="" aria-hidden="true" />
+                                    <span>Cocina, refrigerador y utensilios básicos</span>
+                                </li>
+                                <li>
+                                    <img src="assets/icons/circle-check-icon.svg" alt="" aria-hidden="true" />
+                                    <span>Baño privado</span>
+                                </li>
+                                <li>
+                                    <img src="assets/icons/circle-check-icon.svg" alt="" aria-hidden="true" />
+                                    <span>Estacionamiento y acceso directo al lago</span>
+                                </li>
+                            </ul>
+                            <p class="card-note">Consulta disponibilidad y capacidad</p>
+                            <a href="tel:+56985823822" class="btn btn-primary btn-block">
+                                <img src="assets/icons/phone-icon.svg" alt="" class="btn-icon" aria-hidden="true" />
+                                <span>Llama ya</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipamiento del recinto -->
+        <section class="section-md amenities-section" id="equipamiento" aria-labelledby="equipamiento-title">
+            <div class="container">
+                <header class="section-header">
+                    <p class="eyebrow">EQUIPAMIENTO DEL RECINTO</p>
+                    <h2 id="equipamiento-title">Todo lo que necesitas para descansar junto al lago</h2>
+                    <p class="section-subtitle">
+                        Instalaciones pensadas para que disfrutes con calma, limpieza y seguridad en cada estadía.
+                    </p>
+                </header>
+
+                <div class="amenities-grid">
+                    <article class="card amenity-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/equip-waves-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Acceso directo al Lago Rapel</h3>
+                        <p>Bajada cómoda desde el camping hacia la orilla del lago.</p>
+                    </article>
+
+                    <article class="card amenity-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/equip-shower-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Baños y duchas</h3>
+                        <p>Instalaciones sanitarias con agua caliente y mantención constante.</p>
+                    </article>
+
+                    <article class="card amenity-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/equip-plug-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Electricidad en sitios</h3>
+                        <p>Puntos de conexión disponibles para camping y estadía.</p>
+                    </article>
+
+                    <article class="card amenity-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/equip-flame-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Quinchos y mesas en sitios</h3>
+                        <p>Espacios listos para compartir en familia o con amistades.</p>
+                    </article>
+
+                    <article class="card amenity-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/equip-car-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Estacionamiento cercano</h3>
+                        <p>Acceso vehicular práctico dentro del recinto.</p>
+                    </article>
+
+                    <article class="card amenity-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/equip-trees-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Ambiente familiar y seguro</h3>
+                        <p>Entorno tranquilo orientado al descanso en El Manzano.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de imágenes -->
+        <section class="section-lg gallery-section" id="galeria" aria-labelledby="galeria-title">
+            <div class="container">
+                <header class="section-header">
+                    <p class="eyebrow">GALERÍA DE FOTOS</p>
+                    <h2 id="galeria-title">Descubre el Sector 1 en imágenes</h2>
+                    <p class="section-subtitle">
+                        Un vistazo al entorno del lago, las zonas de camping y la tranquilidad de nuestro recinto.
+                    </p>
+                </header>
+
+                <div class="gallery-filters" role="group" aria-label="Filtrar galería">
+                    <button type="button" class="filter-pill is-active" data-filter="all">Todas</button>
+                    <button type="button" class="filter-pill" data-filter="agua">Agua y vista</button>
+                    <button type="button" class="filter-pill" data-filter="camping">Sitios y camping</button>
+                    <button type="button" class="filter-pill" data-filter="cabanas">Cabañas</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item" data-category="agua">
+                        <img src="assets/img/galeria-agua-1.png"
+                            alt="Vista panorámica del Lago Rapel con reflejos en el agua y cerros al fondo"
+                            loading="lazy" />
+                    </figure>
+                    <figure class="gallery-item" data-category="camping">
+                        <img src="assets/img/galeria-camping-2.jpg"
+                            alt="Sitio de camping con toldo, mesa, quincho y vista al lago" loading="lazy" />
+                    </figure>
+                    <figure class="gallery-item" data-category="camping">
+                        <img src="assets/img/galeria-camping-1.jpg"
+                            alt="Zona de camping con árboles frondosos, pasto y toldos" loading="lazy" />
+                    </figure>
+                    <figure class="gallery-item" data-category="cabanas">
+                        <img src="assets/img/galeria-cabanas-2.jpg"
+                            alt="Dormitorio matrimonial con luz natural en cabaña" loading="lazy" />
+                    </figure>
+                    <figure class="gallery-item" data-category="cabanas">
+                        <img src="assets/img/galeria-cabanas-1.jpg"
+                            alt="Cocina y comedor equipados en cabaña de Sector 1" loading="lazy" />
+                    </figure>
+                    <figure class="gallery-item" data-category="agua">
+                        <img src="assets/img/galeria-agua-2.png"
+                            alt="Lago Rapel con kayak y muelle frente a los cerros" loading="lazy" />
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="section-lg testimonials-section" id="testimonios" aria-labelledby="testimonios-title">
+            <div class="container">
+                <header class="section-header">
+                    <p class="eyebrow">LO QUE DICEN NUESTROS VISITANTES</p>
+                    <h2 id="testimonios-title">Experiencias inolvidables en El Manzano</h2>
+                    <p class="section-subtitle">
+                        Familias y viajeros que eligen la tranquilidad del lago y el buen trato.
+                    </p>
+                </header>
+
+                <div class="testimonials-grid">
+                    <article class="card testimonial-card">
+                        <div>
+                            <div class="rating" aria-label="Calificación 5 de 5 estrellas">
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                            </div>
+                            <p class="quote">
+                                “Excelente lugar en Lago Rapel, muy limpio, ordenado y con un entorno ideal para
+                                descansar en familia. Volveremos sin duda.”
+                            </p>
+                        </div>
+                        <div class="author">
+                            <span class="author-name">Valentina R.</span>
+                            <span class="author-origin">Santiago</span>
+                        </div>
+                    </article>
+
+                    <article class="card testimonial-card">
+                        <div>
+                            <div class="rating" aria-label="Calificación 5 de 5 estrellas">
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                            </div>
+                            <p class="quote">
+                                “Muy buen ambiente, todo bien cuidado y acceso cómodo al lago. Ideal para desconectarse
+                                unos días de la rutina.”
+                            </p>
+                        </div>
+                        <div class="author">
+                            <span class="author-name">Carlos M.</span>
+                            <span class="author-origin">Rancagua</span>
+                        </div>
+                    </article>
+
+                    <article class="card testimonial-card">
+                        <div>
+                            <div class="rating" aria-label="Calificación 5 de 5 estrellas">
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                                <img src="assets/icons/star-icon.svg" alt="" aria-hidden="true" />
+                            </div>
+                            <p class="quote">
+                                “La atención y el espacio hacen toda la diferencia para pasar un fin de semana tranquilo
+                                frente al agua. Muy recomendable.”
+                            </p>
+                        </div>
+                        <div class="author">
+                            <span class="author-name">Andrea P.</span>
+                            <span class="author-origin">San Miguel</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo llegar -->
+        <section class="section-lg location-section" id="como-llegar" aria-labelledby="location-title">
+            <div class="container location-grid">
+                <div class="location-info">
+                    <p class="eyebrow">CÓMO LLEGAR</p>
+                    <h2 id="location-title">Encuentra tu refugio en Lago Rapel</h2>
+                    <p class="location-description">
+                        Estamos ubicados en el sector El Manzano, comuna de Las Cabras. El camino es transitable todo el
+                        año y la ruta está señalizada.
+                    </p>
+
+                    <div class="reference-points">
+                        <h3>Puntos de Referencia:</h3>
+                        <ul>
+                            <li>A 2 horas aprox. de Santiago y Rancagua.</li>
+                            <li>A 30 min. del cruce Las Arañas (vía Ruta 66).</li>
+                            <li>A 15 min. en auto desde el centro de Las Cabras.</li>
+                        </ul>
+                    </div>
+
+                    <div class="location-actions">
+                        <a href="https://maps.app.goo.gl/iDB41wYheAsduRsMA" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            <img src="assets/icons/white-map-pin-icon.svg" alt="" class="btn-icon" aria-hidden="true" />
+                            <span>Abrir en Google Maps</span>
+                        </a>
+                        <a href="https://waze.com/ul?q=El+Manzano+Las+Cabras+Lago+Rapel&navigate=yes" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-secondary">
+                            <img src="assets/icons/waze-icon.svg" alt="" class="btn-icon" aria-hidden="true" />
+                            <span>Abrir en Waze</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="location-map media-frame">
+                    <iframe title="Mapa de ubicación de Sector 1 Camping Angostura en El Manzano, Lago Rapel"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6604.145698816293!2d-71.36918556557629!3d-34.14447829894265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663992517109e5f%3A0xd8214fcb048a5de1!2sSector%201%20de%20Camping%20Angostura!5e0!3m2!1ses-419!2scl!4v1795527772066!5m2!1ses-419!2scl"
+                        width="600" height="450" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reglamento y convivencia -->
+        <section class="section-lg rules-section" id="reglamento" aria-labelledby="reglamento-title">
+            <div class="container">
+                <header class="section-header">
+                    <p class="eyebrow">REGLAMENTO Y CONVIVENCIA</p>
+                    <h2 id="reglamento-title">Normas para cuidar el descanso de todos</h2>
+                    <p class="section-subtitle">
+                        Somos un recinto de ambiente familiar. Pedimos respetar estas indicaciones básicas para asegurar
+                        una estadía grata.
+                    </p>
+                </header>
+
+                <div class="rules-grid">
+                    <article class="card rule-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/rules-moon-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Horario de silencio y descanso</h3>
+                        <p>Respetar horarios nocturnos para mantener la calma y el descanso de los demás visitantes.</p>
+                    </article>
+
+                    <article class="card rule-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/rules-plug-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Uso eficiente de agua y electricidad</h3>
+                        <p>Cuidar los recursos disponibles y utilizar las conexiones de forma responsable.</p>
+                    </article>
+
+                    <article class="card rule-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/rules-shower-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Cuidado del entorno y limpieza</h3>
+                        <p>Mantener los sitios limpios y depositar los residuos en los lugares habilitados.</p>
+                    </article>
+
+                    <article class="card rule-card">
+                        <div class="icon-box">
+                            <img src="assets/icons/rules-flame-icon.svg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Fuego en zonas y horarios permitidos</h3>
+                        <p>Encender fuego solo donde corresponda y tomar precauciones en todo momento.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner CTA final -->
+        <section class="section-lg cta-banner-section" aria-labelledby="cta-banner-title">
+            <div class="container">
+                <div class="cta-banner">
+                    <p class="eyebrow eyebrow-light">RESERVAS Y CONSULTAS</p>
+                    <h2 id="cta-banner-title">¿Listo para desconectarte en Lago Rapel?</h2>
+                    <p class="cta-banner-subtitle">
+                        Consulta disponibilidad para sitios de camping o cabañas en Sector 1, El Manzano.
+                    </p>
+                    <a href="tel:+56985823822" class="btn btn-light">
+                        <img src="assets/icons/blue-phone-icon.svg" alt="" class="btn-icon" aria-hidden="true" />
+                        <span>Llama ya</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#top" class="scroll-top-trigger" aria-label="Volver arriba — Sector 1 de Camping Angostura">
+                    <img src="assets/logo-angostura-blanco.svg" alt="Sector 1 de Camping Angostura"
+                        class="footer-logo" />
+                </a>
+                <p class="footer-location">El Manzano, Las Cabras, Lago Rapel</p>
+                <p class="footer-desc">
+                    Espacio camping y cabañas pensado para el descanso familiar junto al lago.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="#modalidades">Modalidades</a></li>
+                    <li><a href="#equipamiento">Equipamiento y servicios</a></li>
+                    <li><a href="#galeria">Galería de fotos</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#como-llegar">Cómo llegar</a></li>
+                    <li><a href="#reglamento">Reglamento y convivencia</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-label">Llamadas:</span>
+                        <a href="tel:+56985823822">+56 9 8582 3822</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">WhatsApp:</span>
+                        <a href="https://wa.me/56985823822" target="_blank" rel="noopener noreferrer">+56 9 8582
+                            3822</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Sector+1+Camping+Angostura+El+Manzano+Las+Cabras"
+                            target="_blank" rel="noopener noreferrer">
+                            Ver ubicación en Google Maps
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© Sector 1 Camping Angostura. Todos los derechos reservados.</p>
+            <p>El Manzano, Lago Rapel</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de apoyo por WhatsApp -->
+    <a href="https://wa.me/56985823822" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Escribir por WhatsApp">
+        <img src="assets/icons/whatsapp-icon.svg" alt="" aria-hidden="true" />
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

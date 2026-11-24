@@ -1,0 +1,162 @@
+/* ==========================================================================
+   Design Tokens — Sector 1 de Camping Angostura
+   ========================================================================== */
+
+:root {
+  /* Paleta de color */
+  --color-bg-cream: #f7f5f0;
+  --color-bg-surface: #ffffff;
+  --color-bg-tint: #eef1ed;
+  --color-brand-lake: #004269;
+  --color-brand-lake-hover: #003352;
+  --color-brand-nature: #3b7a3c;
+  --color-text-ink: #211915;
+  --color-text-muted: #5c534e;
+  --color-text-on-dark: #f7f5f0;
+  --color-white: #ffffff;
+
+  /* Bordes (1px al 12% de opacidad) */
+  --border-subtle-12: rgba(33, 25, 21, 0.12);
+  --border-lake: #004269;
+  --border-width: 1px;
+
+  /* Tipografía */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Escala tipográfica */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-md: 0.9375rem;  /* 15px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.375rem;   /* 22px */
+  --text-2xl: 2rem;      /* 32px */
+  --text-3xl: 2.5rem;    /* 40px */
+  --text-hero: 3.25rem;  /* 52px */
+
+  /* Pesos y alturas de línea */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --leading-tight: 1.12;
+  --leading-snug: 1.25;
+  --leading-body: 1.6;
+
+  /* Radios de borde */
+  --radius-sm: 6px;
+  --radius-btn: 8px;
+  --radius-card: 12px;
+  --radius-media: 16px;
+  --radius-pill: 999px;
+
+  /* Medidas de botones y contenedores */
+  --btn-height-primary: 48px;
+  --btn-height-nav: 42px;
+  --container-max: 1200px;
+  --container-gutter: 24px;
+  --grid-gap: 24px;
+
+  /* Espaciado vertical por ritmo editorial */
+  --space-nav-to-hero: 64px;
+  --space-section-md: 80px;
+  --space-section-lg: 96px;
+
+  /* Posición botón flotante */
+  --float-offset: 24px;
+  --z-header: 20;
+  --z-float: 30;
+}
+
+/* Base mínima apoyada en tokens */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-cream);
+  color: var(--color-text-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-gutter);
+}
+
+.media-frame {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-media);
+  border: var(--border-width) solid var(--border-subtle-12);
+}
+
+.media-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--btn-height-primary);
+  padding-inline: 24px;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-brand-lake);
+  color: var(--color-white);
+  border: var(--border-width) solid var(--color-brand-lake);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-brand-lake);
+  border: var(--border-width) solid var(--color-border-lake);
+}
+
+.btn-light {
+  background-color: var(--color-white);
+  color: var(--color-brand-lake);
+  border: var(--border-width) solid var(--color-white);
+}
+
+.section-md {
+  padding-block: var(--space-section-md);
+}
+
+.section-lg {
+  padding-block: var(--space-section-lg);
+}
+
+.hero-section {
+  padding-top: var(--space-nav-to-hero);
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: var(--float-offset);
+  bottom: var(--float-offset);
+  z-index: var(--z-float);
+}
