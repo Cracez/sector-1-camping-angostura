@@ -56,3 +56,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Registrar clics en botones de llamada y WhatsApp
+window.dataLayer = window.dataLayer || [];
+
+document.querySelectorAll('a[href^="tel:"]').forEach((enlace) => {
+  enlace.addEventListener('click', () => {
+    window.dataLayer.push({
+      event: 'click_llamar',
+      categoria_contacto: 'contacto',
+      etiqueta_boton: enlace.textContent.trim() || 'Llama ya'
+    });
+  });
+});
+
+document.querySelectorAll('a[href*="wa.me"]').forEach((enlace) => {
+  enlace.addEventListener('click', () => {
+    window.dataLayer.push({
+      event: 'click_whatsapp',
+      categoria_contacto: 'contacto',
+      etiqueta_boton: enlace.textContent.trim() || 'WhatsApp'
+    });
+  });
+});
